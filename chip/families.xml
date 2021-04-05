@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+   Copyright 2021 xqyjlj
+
+   Licensed under GNU GENERAL PUBLIC LICENSE, (the "License");
+   You may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://github.com/xqyjlj/ChmcuInit
+
+   Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, 
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and limitations under the License.
+-->
+<!--
+    版权所有2021 xqyjlj
+    根据GNU通用公共许可证，(下称“许可”);
+
+    除非符合许可，否则您不能使用此文件。
+    你可以在以下网站获得一份许可证副本
+
+        https://github.com/xqyjlj/ChmcuInit
+
+    除非适用法律要求或书面同意，否则软件根据许可分发的内容按原样分发，没有任何明示或暗示的保证或条件。
+    有关特定语言的管理权限，请参阅许可证和许可证中的限制。 
+-->
+<Families>
+    <Company Name="HDSC" ChineseName="华大半导体有限公司">
+        <Family Name="HC32F0">
+            <SubFamily Name="HC32F002">
+                <Mcu Name="HC32F002D4PB" PackageName="TSSOP24" CompanyName="HDSC" FamilyName="HC32F0" SubFamilyName="HC32F002">
+                    <Core>Arm Cortex-M0+</Core>
+                    <Frequency>48</Frequency>
+                    <Ram>2</Ram>
+                    <IO>22</IO>
+                    <Flash>18</Flash>
+                    <Voltage Min="1.7" Max="5.5"/>
+                    <Current Lowest="5.0" Run="100.0"/>
+                    <Temperature Min="-40.0" Max="105.0"/>
+                    <Peripheral Type="ATIM"/>
+                    <Peripheral Type="GTIM"/>
+                    <Peripheral Type="BTIM"/>
+                    <Peripheral Type="IWDT"/>
+                    <Peripheral Type="WWDT"/>
+                    <Peripheral Type="LPUART"/>
+                    <Peripheral Type="SPI"/>
+                    <Peripheral Type="I2C"/>
+                    <Peripheral Type="SARADC 10-bit" MaxOccurs="10"/>
+                </Mcu>
+                <Mcu Name="HC32F002C4PB" PackageName="TSSOP20" CompanyName="HDSC" FamilyName="HC32F0" SubFamilyName="HC32F002">
+                    <Core>Arm Cortex-M0+</Core>
+                    <Frequency>48</Frequency>
+                    <Ram>2</Ram>
+                    <IO>18</IO>
+                    <Flash>18</Flash>
+                    <Voltage Min="1.7" Max="5.5"/>
+                    <Current Lowest="5.0" Run="100.0"/>
+                    <Temperature Min="-40.0" Max="105.0"/>
+                    <Peripheral Type="ATIM"/>
+                    <Peripheral Type="GTIM"/>
+                    <Peripheral Type="BTIM"/>
+                    <Peripheral Type="IWDT"/>
+                    <Peripheral Type="WWDT"/>
+                    <Peripheral Type="LPUART"/>
+                    <Peripheral Type="SPI"/>
+                    <Peripheral Type="I2C"/>
+                    <Peripheral Type="SARADC 10-bit" MaxOccurs="10"/>
+                </Mcu>
+                <Mcu Name="HC32F002D4UB" PackageName="QFN24TR" CompanyName="HDSC" FamilyName="HC32F0" SubFamilyName="HC32F002">
+                    <Core>Arm Cortex-M0+</Core>
+                    <Frequency>48</Frequency>
+                    <Ram>2</Ram>
+                    <IO>22</IO>
+                    <Flash>18</Flash>
+                    <Voltage Min="1.7" Max="5.5"/>
+                    <Current Lowest="5.0" Run="100.0"/>
+                    <Temperature Min="-40.0" Max="105.0"/>
+                    <Peripheral Type="ATIM"/>
+                    <Peripheral Type="GTIM"/>
+                    <Peripheral Type="BTIM"/>
+                    <Peripheral Type="IWDT"/>
+                    <Peripheral Type="WWDT"/>
+                    <Peripheral Type="LPUART"/>
+                    <Peripheral Type="SPI"/>
+                    <Peripheral Type="I2C"/>
+                    <Peripheral Type="SARADC 10-bit" MaxOccurs="10"/>
+                </Mcu>
+                <Mcu Name="HC32F002C4UB" PackageName="ZFN20TR" CompanyName="HDSC" FamilyName="HC32F0" SubFamilyName="HC32F002">
+                    <Core>Arm Cortex-M0+</Core>
+                    <Frequency>48</Frequency>
+                    <Ram>2</Ram>
+                    <IO>18</IO>
+                    <Flash>18</Flash>
+                    <Voltage Min="1.7" Max="5.5"/>
+                    <Current Lowest="5.0" Run="100.0"/>
+                    <Temperature Min="-40.0" Max="105.0"/>
+                    <Peripheral Type="ATIM"/>
+                    <Peripheral Type="GTIM"/>
+                    <Peripheral Type="BTIM"/>
+                    <Peripheral Type="IWDT"/>
+                    <Peripheral Type="WWDT"/>
+                    <Peripheral Type="LPUART"/>
+                    <Peripheral Type="SPI"/>
+                    <Peripheral Type="I2C"/>
+                    <Peripheral Type="SARADC 10-bit" MaxOccurs="10"/>
+                </Mcu>
+            </SubFamily>
+        </Family>
+    </Company>
+    <Company Name="STMicroelectronics" ChineseName="意法半导体">
+        <Family Name="STM32F1">
+            <SubFamily Name="STM32F103">
+                <Mcu Name="STM32F103C8T6" PackageName="LQFP48" CompanyName="STMicroelectronics" FamilyName="STM32F1" SubFamilyName="STM32F103">
+                    <Core>Arm Cortex-M3</Core>
+                    <Frequency>72</Frequency>
+                    <Ram>20</Ram>
+                    <IO>37</IO>
+                    <Flash>64</Flash>
+                    <Voltage Max="3.6" Min="2.0"/>
+                    <Current Lowest="1.7" Run="373.0"/>
+                    <Temperature Max="105.0" Min="-40.0"/>
+                    <Peripheral Type="ADC 12-bit" MaxOccurs="10"/>
+                    <Peripheral Type="CAN" MaxOccurs="1"/>
+                    <Peripheral Type="I2C" MaxOccurs="2"/>
+                    <Peripheral Type="RTC" MaxOccurs="1"/>
+                    <Peripheral Type="SPI" MaxOccurs="2"/>
+                    <Peripheral Type="Timer 16-bit" MaxOccurs="4"/>
+                    <Peripheral Type="USART" MaxOccurs="3"/>
+                    <Peripheral Type="USB Device" MaxOccurs="1"/>
+                </Mcu>
+            </SubFamily>      
+        </Family>
+    </Company>
+    <Company Name="GigaDevice" ChineseName="兆易创新公司">
+        <Family Name="GD32F1">
+            <SubFamily Name="GD32F103">
+                <Mcu Name="GD32F103C8T6" PackageName="LQFP48" CompanyName="GigaDevice" FamilyName="GD32F1" SubFamilyName="GD32F103">
+                    <Core>Arm Cortex-M3</Core>
+                    <Frequency>72</Frequency>
+                    <Ram>20</Ram>
+                    <IO>37</IO>
+                    <Flash>64</Flash>
+                    <Voltage Max="3.6" Min="2.0"/>
+                    <Current Lowest="1.7" Run="373.0"/>
+                    <Temperature Max="105.0" Min="-40.0"/>
+                    <Peripheral Type="ADC 12-bit" MaxOccurs="10"/>
+                    <Peripheral Type="CAN" MaxOccurs="1"/>
+                    <Peripheral Type="I2C" MaxOccurs="2"/>
+                    <Peripheral Type="RTC" MaxOccurs="1"/>
+                    <Peripheral Type="SPI" MaxOccurs="2"/>
+                    <Peripheral Type="Timer 16-bit" MaxOccurs="4"/>
+                    <Peripheral Type="USART" MaxOccurs="3"/>
+                    <Peripheral Type="USB Device" MaxOccurs="1"/>
+                </Mcu>
+            </SubFamily>      
+        </Family>
+    </Company>
+</Families>

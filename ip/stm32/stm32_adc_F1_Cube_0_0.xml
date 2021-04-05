@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   Copyright 2021 xqyjlj
+
+   Licensed under GNU GENERAL PUBLIC LICENSE, (the "License");
+   You may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://github.com/xqyjlj/ChmcuInit
+
+   Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, 
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and limitations under the License.
+-->
+<!--
+    版权所有2021 xqyjlj
+    根据GNU通用公共许可证，(下称“许可”);
+
+    除非符合许可，否则您不能使用此文件。
+    你可以在以下网站获得一份许可证副本
+
+        https://github.com/xqyjlj/ChmcuInit
+
+    除非适用法律要求或书面同意，否则软件根据许可分发的内容按原样分发，没有任何明示或暗示的保证或条件。
+    有关特定语言的管理权限，请参阅许可证和许可证中的限制。 
+-->
+<IP Name="ADC" PackName="stm32_adc_F1_Cube" Version="0_0">
+    <RefParameter Label="Mode" MCU="STM32F103C8T6">
+        <PossibleValue Comment="Channel 0" Value="ADC_CHANNEL_0"/>
+        <PossibleValue Comment="Channel 1" Value="ADC_CHANNEL_1"/>
+        <PossibleValue Comment="Channel 2" Value="ADC_CHANNEL_2"/>
+        <PossibleValue Comment="Channel 3" Value="ADC_CHANNEL_3"/>
+        <PossibleValue Comment="Channel 4" Value="ADC_CHANNEL_4"/>
+        <PossibleValue Comment="Channel 5" Value="ADC_CHANNEL_5"/>
+        <PossibleValue Comment="Channel 6" Value="ADC_CHANNEL_6"/>
+        <PossibleValue Comment="Channel 7" Value="ADC_CHANNEL_7"/>
+        <PossibleValue Comment="Channel 8" Value="ADC_CHANNEL_8"/>
+        <PossibleValue Comment="Channel 9" Value="ADC_CHANNEL_9"/>
+        <PossibleValue Comment="Channel Temperature Sensor" Value="ADC_CHANNEL_TEMPSENSOR"/>
+        <PossibleValue Comment="Channel Vrefint" Value="ADC_CHANNEL_VREFINT"/>
+    </RefParameter>
+</IP>

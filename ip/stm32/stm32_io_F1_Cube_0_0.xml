@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+   Copyright 2021 xqyjlj
+
+   Licensed under GNU GENERAL PUBLIC LICENSE, (the "License");
+   You may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://github.com/xqyjlj/ChmcuInit
+
+   Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, 
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and limitations under the License.
+-->
+<!--
+    版权所有2021 xqyjlj
+    根据GNU通用公共许可证，(下称“许可”);
+
+    除非符合许可，否则您不能使用此文件。
+    你可以在以下网站获得一份许可证副本
+
+        https://github.com/xqyjlj/ChmcuInit
+
+    除非适用法律要求或书面同意，否则软件根据许可分发的内容按原样分发，没有任何明示或暗示的保证或条件。
+    有关特定语言的管理权限，请参阅许可证和许可证中的限制。 
+-->
+<IP InstanceName="GPIO" Name="IO" PackName="stm32_io_F1_Cube" Version="0_0">
+    <SubFamily Name="STM32F103">
+        <Configuration McuName="STM32F103C8T6">
+            <Mode Name="输出电平" Widgets="QComboBox">
+                <Table Key="低" Value="GPIO_PIN_RESET"/>
+                <Table Key="高" Value="GPIO_PIN_SET"/>
+            </Mode>
+            <Mode Name="模式" Widgets="QComboBox">
+                <Table Key="浮空输入" Value="GPIO_MODE_INPUT"/>
+                <Table Key="推挽输出" Value="GPIO_MODE_OUTPUT_PP"/>
+                <Table Key="开漏输出" Value="GPIO_MODE_OUTPUT_OD"/>
+                <Table Key="复用推挽" Value="GPIO_MODE_AF_PP"/>
+                <Table Key="复用开漏" Value="GPIO_MODE_AF_OD"/>  
+                <Table Key="复用输入" Value="GPIO_MODE_AF_INPUT"/>
+                <Table Key="上升沿中断" Value="GPIO_MODE_IT_RISING"/>
+                <Table Key="下降沿中断" Value="GPIO_MODE_IT_FALLING"/>
+                <Table Key="上升沿下降沿中断" Value="GPIO_MODE_IT_RISING_FALLING"/>
+                <Table Key="上升沿事件" Value="GPIO_MODE_EVT_RISING"/>
+                <Table Key="下降沿事件" Value="GPIO_MODE_EVT_FALLING"/>
+                <Table Key="上升沿下降沿事件" Value="GPIO_MODE_EVT_RISING_FALLING"/>                
+            </Mode>
+            <Mode Name="速度" Widgets="QComboBox">
+                <Table Key="低速" Value="GPIO_SPEED_FREQ_LOW"/>
+                <Table Key="中速" Value="GPIO_SPEED_FREQ_MEDIUM"/>
+                <Table Key="高速" Value="GPIO_SPEED_FREQ_HIGH"/>             
+            </Mode>
+            <Mode Name="上下拉" Widgets="QComboBox">
+                <Table Key="上拉" Value="GPIO_NOPULL"/>
+                <Table Key="下拉" Value="GPIO_PULLUP"/>
+                <Table Key="不上拉不下拉" Value="GPIO_PULLDOWN"/>             
+            </Mode>
+            <UserLabel Name="用户标签" Widget="QLineEdit"/>
+        </Configuration>
+    </SubFamily>
+</IP>
