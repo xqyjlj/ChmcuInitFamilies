@@ -24,7 +24,7 @@
     除非适用法律要求或书面同意，否则软件根据许可分发的内容按原样分发，没有任何明示或暗示的保证或条件。
     有关特定语言的管理权限，请参阅许可证和许可证中的限制。 
 -->
-<Mcu Name="STM32F103C8T6" ClockTree="STM32F102" Version="V0.0" Family="STM32F1" SubFamilyName="STM32F103" Package="LQFP48" PackName="STM32CubeF1" PinNum="48">
+<Mcu Name="STM32F103C8T6" ClockTree="STM32F102" Family="STM32F1" SubFamilyName="STM32F103" Package="LQFP48" PackName="STM32CubeF1" PinNum="48">
 	<Core>Arm Cortex-M3</Core>
 	<Frequency>72</Frequency>
 	<Ram>20</Ram>
@@ -34,15 +34,15 @@
 	<Current Lowest="1.7" Run="373"/>
 	<Temperature Max="105" Min="-40"/>
 
-    <IP InstanceName="ADC1" Name="ADC" PackName="stm32_adc_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32"/>
-	<IP InstanceName="ADC2" Name="ADC" PackName="stm32_adc_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32"/>
+    <IP InstanceName="ADC1" Name="ADC" PackName="stm32_adc_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
+	<IP InstanceName="ADC2" Name="ADC" PackName="stm32_adc_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
     <IP InstanceName="CRC"  Name="CRC" PackName="stm32_crc_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32"/>
-    <IP InstanceName="USART1" Name="USART" PackName="stm32_uart_F1_Cube"  Version="0_0" PackLocate="/origin/families/ip/stm32"/>
-	<IP InstanceName="USART2" Name="USART" PackName="stm32_uart_F1_Cube"  Version="0_0" PackLocate="/origin/families/ip/stm32"/>
-	<IP InstanceName="USART3" Name="USART" PackName="stm32_uart_F1_Cube"  Version="0_0" PackLocate="/origin/families/ip/stm32"/>
-    <IP InstanceName="SPI1" Name="SPI" PackName="stm32_spi_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32"/>
-	<IP InstanceName="SPI2" Name="SPI" PackName="stm32_spi_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32"/>
-    <IP InstanceName="GPIO" Name="IO" PackName="stm32_io_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32"/>
+    <IP InstanceName="USART1" Name="USART" PackName="stm32_uart_F1_Cube"  Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
+	<IP InstanceName="USART2" Name="USART" PackName="stm32_uart_F1_Cube"  Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
+	<IP InstanceName="USART3" Name="USART" PackName="stm32_uart_F1_Cube"  Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
+    <IP InstanceName="SPI1" Name="SPI" PackName="stm32_spi_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
+	<IP InstanceName="SPI2" Name="SPI" PackName="stm32_spi_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
+    <IP InstanceName="GPIO" Name="IO" PackName="stm32_io_F1_Cube" Version="0_0" PackLocate="/origin/families/ip/stm32/"/>
 <!-- 
     <IP InstanceName="ADC1" Name="ADC" Version="aditf_v2_5F1_Cube"/>
 	<IP InstanceName="ADC2" Name="ADC" Version="aditf_v2_5F1_Cube"/>
@@ -73,33 +73,33 @@
 	<IP ConfigFile="NVIC-STM32F1xx" InstanceName="NVIC" Name="NVIC" Version="STM32F103G"/> 
 -->
 	<Pin Name="VBAT" Position="1" Type="Power"/>
-	<Pin Name="PC13-TAMPER-RTC" Position="2" Type="I/O">
+	<Pin Name="PC13-TAMPER-RTC" Position="2" Type="IO">
 		<Signal Name="RTC_OUT"/>
 		<Signal Name="RTC_TAMPER"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PC14-OSC32_IN" Position="3" Type="I/O">
+	<Pin Name="PC14-OSC32_IN" Position="3" Type="IO">
 		<Signal Name="RCC_OSC32_IN"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PC15-OSC32_OUT" Position="4" Type="I/O">
+	<Pin Name="PC15-OSC32_OUT" Position="4" Type="IO">
 		<Signal Name="ADC1_EXTI15"/>
 		<Signal Name="ADC2_EXTI15"/>
 		<Signal Name="RCC_OSC32_OUT"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PD0-OSC_IN" Position="5" Type="I/O">
+	<Pin Name="PD0-OSC_IN" Position="5" Type="IO">
 		<Signal Name="RCC_OSC_IN"/>
 		<Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PD1-OSC_OUT" Position="6" Type="I/O">
+	<Pin Name="PD1-OSC_OUT" Position="6" Type="IO">
 		<Signal Name="RCC_OSC_OUT"/>
 		<Signal IOModes="Input,Output,Analog,EXTI" Name="GPIO"/>
 	</Pin>
 	<Pin Name="NRST" Position="7" Type="Reset"/>
 	<Pin Name="VSSA" Position="8" Type="Power"/>
 	<Pin Name="VDDA" Position="9" Type="Power"/>
-	<Pin Name="PA0-WKUP" Position="10" Type="I/O">
+	<Pin Name="PA0-WKUP" Position="10" Type="IO">
 		<Signal Name="ADC1_IN0"/>
 		<Signal Name="ADC2_IN0"/>
 		<Signal Name="SYS_WKUP"/>
@@ -108,41 +108,41 @@
 		<Signal Name="USART2_CTS"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA1" Position="11" Type="I/O">
+	<Pin Name="PA1" Position="11" Type="IO">
 		<Signal Name="ADC1_IN1"/>
 		<Signal Name="ADC2_IN1"/>
 		<Signal Name="TIM2_CH2"/>
 		<Signal Name="USART2_RTS"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA2" Position="12" Type="I/O">
+	<Pin Name="PA2" Position="12" Type="IO">
 		<Signal Name="ADC1_IN2"/>
 		<Signal Name="ADC2_IN2"/>
 		<Signal Name="TIM2_CH3"/>
 		<Signal Name="USART2_TX"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA3" Position="13" Type="I/O">
+	<Pin Name="PA3" Position="13" Type="IO">
 		<Signal Name="ADC1_IN3"/>
 		<Signal Name="ADC2_IN3"/>
 		<Signal Name="TIM2_CH4"/>
 		<Signal Name="USART2_RX"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA4" Position="14" Type="I/O">
+	<Pin Name="PA4" Position="14" Type="IO">
 		<Signal Name="ADC1_IN4"/>
 		<Signal Name="ADC2_IN4"/>
 		<Signal Name="SPI1_NSS"/>
 		<Signal Name="USART2_CK"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA5" Position="15" Type="I/O">
+	<Pin Name="PA5" Position="15" Type="IO">
 		<Signal Name="ADC1_IN5"/>
 		<Signal Name="ADC2_IN5"/>
 		<Signal Name="SPI1_SCK"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA6" Position="16" Type="I/O">
+	<Pin Name="PA6" Position="16" Type="IO">
 		<Signal Name="ADC1_IN6"/>
 		<Signal Name="ADC2_IN6"/>
 		<Signal Name="SPI1_MISO"/>
@@ -150,7 +150,7 @@
 		<Signal Name="TIM3_CH1"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA7" Position="17" Type="I/O">
+	<Pin Name="PA7" Position="17" Type="IO">
 		<Signal Name="ADC1_IN7"/>
 		<Signal Name="ADC2_IN7"/>
 		<Signal Name="SPI1_MOSI"/>
@@ -158,30 +158,30 @@
 		<Signal Name="TIM3_CH2"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB0" Position="18" Type="I/O">
+	<Pin Name="PB0" Position="18" Type="IO">
 		<Signal Name="ADC1_IN8"/>
 		<Signal Name="ADC2_IN8"/>
 		<Signal Name="TIM1_CH2N"/>
 		<Signal Name="TIM3_CH3"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB1" Position="19" Type="I/O">
+	<Pin Name="PB1" Position="19" Type="IO">
 		<Signal Name="ADC1_IN9"/>
 		<Signal Name="ADC2_IN9"/>
 		<Signal Name="TIM1_CH3N"/>
 		<Signal Name="TIM3_CH4"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB2" Position="20" Type="I/O">
+	<Pin Name="PB2" Position="20" Type="IO">
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB10" Position="21" Type="I/O">
+	<Pin Name="PB10" Position="21" Type="IO">
 		<Signal Name="I2C2_SCL"/>
 		<Signal Name="TIM2_CH3"/>
 		<Signal Name="USART3_TX"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB11" Position="22" Type="I/O">
+	<Pin Name="PB11" Position="22" Type="IO">
 		<Signal Name="ADC1_EXTI11"/>
 		<Signal Name="ADC2_EXTI11"/>
 		<Signal Name="I2C2_SDA"/>
@@ -191,49 +191,49 @@
 	</Pin>
 	<Pin Name="VSS" Position="23" Type="Power"/>
 	<Pin Name="VDD" Position="24" Type="Power"/>
-	<Pin Name="PB12" Position="25" Type="I/O">
+	<Pin Name="PB12" Position="25" Type="IO">
 		<Signal Name="I2C2_SMBA"/>
 		<Signal Name="SPI2_NSS"/>
 		<Signal Name="TIM1_BKIN"/>
 		<Signal Name="USART3_CK"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB13" Position="26" Type="I/O">
+	<Pin Name="PB13" Position="26" Type="IO">
 		<Signal Name="SPI2_SCK"/>
 		<Signal Name="TIM1_CH1N"/>
 		<Signal Name="USART3_CTS"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB14" Position="27" Type="I/O">
+	<Pin Name="PB14" Position="27" Type="IO">
 		<Signal Name="SPI2_MISO"/>
 		<Signal Name="TIM1_CH2N"/>
 		<Signal Name="USART3_RTS"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB15" Position="28" Type="I/O">
+	<Pin Name="PB15" Position="28" Type="IO">
 		<Signal Name="ADC1_EXTI15"/>
 		<Signal Name="ADC2_EXTI15"/>
 		<Signal Name="SPI2_MOSI"/>
 		<Signal Name="TIM1_CH3N"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA8" Position="29" Type="I/O">
+	<Pin Name="PA8" Position="29" Type="IO">
 		<Signal Name="RCC_MCO"/>
 		<Signal Name="TIM1_CH1"/>
 		<Signal Name="USART1_CK"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA9" Position="30" Type="I/O">
+	<Pin Name="PA9" Position="30" Type="IO">
 		<Signal Name="TIM1_CH2"/>
 		<Signal Name="USART1_TX"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA10" Position="31" Type="I/O">
+	<Pin Name="PA10" Position="31" Type="IO">
 		<Signal Name="TIM1_CH3"/>
 		<Signal Name="USART1_RX"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA11" Position="32" Type="I/O">
+	<Pin Name="PA11" Position="32" Type="IO">
 		<Signal Name="ADC1_EXTI11"/>
 		<Signal Name="ADC2_EXTI11"/>
 		<Signal Name="CAN_RX"/>
@@ -242,24 +242,24 @@
 		<Signal Name="USB_DM"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA12" Position="33" Type="I/O">
+	<Pin Name="PA12" Position="33" Type="IO">
 		<Signal Name="CAN_TX"/>
 		<Signal Name="TIM1_ETR"/>
 		<Signal Name="USART1_RTS"/>
 		<Signal Name="USB_DP"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA13" Position="34" Type="I/O">
+	<Pin Name="PA13" Position="34" Type="IO">
 		<Signal Name="SYS_JTMS-SWDIO"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
 	<Pin Name="VSS" Position="35" Type="Power"/>
 	<Pin Name="VDD" Position="36" Type="Power"/>
-	<Pin Name="PA14" Position="37" Type="I/O">
+	<Pin Name="PA14" Position="37" Type="IO">
 		<Signal Name="SYS_JTCK-SWCLK"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PA15" Position="38" Type="I/O">
+	<Pin Name="PA15" Position="38" Type="IO">
 		<Signal Name="ADC1_EXTI15"/>
 		<Signal Name="ADC2_EXTI15"/>
 		<Signal Name="SPI1_NSS"/>
@@ -268,46 +268,46 @@
 		<Signal Name="TIM2_ETR"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB3" Position="39" Type="I/O">
+	<Pin Name="PB3" Position="39" Type="IO">
 		<Signal Name="SPI1_SCK"/>
 		<Signal Name="SYS_JTDO-TRACESWO"/>
 		<Signal Name="TIM2_CH2"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB4" Position="40" Type="I/O">
+	<Pin Name="PB4" Position="40" Type="IO">
 		<Signal Name="SPI1_MISO"/>
 		<Signal Name="SYS_NJTRST"/>
 		<Signal Name="TIM3_CH1"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB5" Position="41" Type="I/O">
+	<Pin Name="PB5" Position="41" Type="IO">
 		<Signal Name="I2C1_SMBA"/>
 		<Signal Name="SPI1_MOSI"/>
 		<Signal Name="TIM3_CH2"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 		<Condition Diagnostic="BZ#83533" Expression="(!(SPI1_MOSI &amp; PB6_I2C1_SCL) )"/>
 	</Pin>
-	<Pin Name="PB6" Position="42" Type="I/O">
+	<Pin Name="PB6" Position="42" Type="IO">
 		<Signal Name="I2C1_SCL"/>
 		<Signal Name="TIM4_CH1"/>
 		<Signal Name="USART1_TX"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 		<Condition Diagnostic="BZ#83533" Expression="(!(I2C1_SCL &amp; PB5_SPI1_MOSI) )"/>
 	</Pin>
-	<Pin Name="PB7" Position="43" Type="I/O">
+	<Pin Name="PB7" Position="43" Type="IO">
 		<Signal Name="I2C1_SDA"/>
 		<Signal Name="TIM4_CH2"/>
 		<Signal Name="USART1_RX"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
 	<Pin Name="BOOT0" Position="44" Type="Boot"/>
-	<Pin Name="PB8" Position="45" Type="I/O">
+	<Pin Name="PB8" Position="45" Type="IO">
 		<Signal Name="CAN_RX"/>
 		<Signal Name="I2C1_SCL"/>
 		<Signal Name="TIM4_CH3"/>
 		<Signal IOModes="Input,Output,Analog,EVENTOUT,EXTI" Name="GPIO"/>
 	</Pin>
-	<Pin Name="PB9" Position="46" Type="I/O">
+	<Pin Name="PB9" Position="46" Type="IO">
 		<Signal Name="CAN_TX"/>
 		<Signal Name="I2C1_SDA"/>
 		<Signal Name="TIM4_CH4"/>
